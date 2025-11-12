@@ -1,0 +1,200 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сравнение автомобилей</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 50px 80px;
+      background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+      color: #cccccc;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffd54f;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #1f1f1f;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      table-layout: fixed;
+    }
+
+    caption {
+      font-size: 1.5em;
+      margin: 10px;
+      font-weight: bold;
+      color: #ffd54f;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 20px 8px;
+      text-align: center;
+      vertical-align: middle;
+      color: #cccccc;
+    }
+
+    thead th {
+      background-color: #3c3c3c;
+      color: #ffd54f;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #1f1f1f;
+    }
+
+    /* Цвета для колонок */
+    td:nth-child(1) {
+      background-color: #2e2e2e;
+    }
+    td:nth-child(2) {
+      background-color: #3c3c3c;
+    }
+    td:nth-child(3) {
+      background-color: #444;
+    }
+    td:nth-child(4) {
+      background-color: #555;
+    }
+
+    mark {
+      background-color: #ffd54f;
+      color: #000;
+      padding: 2px 4px;
+    }
+
+    details {
+      margin-top: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #ffd54f;
+    }
+
+    img.full-width {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Сравнение автомобилей</h1>
+
+<table>
+  <caption></caption>
+  <thead>
+    <tr>
+      <th>Характеристики</th>
+      <th>Lamborghini</th>
+      <th>Voyah</th>
+      <th>Jaguar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>
+        <details>
+          <summary>Показать фото</summary>
+          <img src="3.jpg" alt="Lamborghini" class="full-width">
+        </details>
+      </td>
+      <td>
+        <details>
+          <summary>Показать фото</summary>
+          <img src="1.jpg" alt="Voyah" class="full-width">
+        </details>
+      </td>
+      <td>
+        <details>
+          <summary>Показать фото</summary>
+          <img src="2.jpg" alt="Jaguar" class="full-width">
+        </details>
+      </td>
+    </tr>
+    <tr>
+      <td>Самая дорогая модель</td>
+      <td>Revuelto</td>
+      <td>Free EV</td>
+      <td>F-Type R</td>
+    </tr>
+    <tr>
+      <td>Самая дешевая модель</td>
+      <td>Huracán</td>
+      <td>Dream</td>
+      <td>E-Pace</td>
+    </tr>
+    <tr>
+      <td>Двигатель</td>
+      <td>V12 6.5 л / V10 5.2 л</td>
+      <td>Электродвигатель (EV)</td>
+      <td>2.0 л турбо</td>
+    </tr>
+    <tr>
+      <td>Расход топлива</td>
+      <td>~17 л/100 км</td>
+      <td>0 л/100 км (электро)</td>
+      <td>~8 л/100 км / 0 л (I-Pace)</td>
+    </tr>
+    <tr>
+      <td>Скорость до 100 км</td>
+      <td><b>2.5–3.2 сек</b></td>
+      <td>~4.4 сек</td>
+      <td>~4.6 сек (F-Type)</td>
+    </tr>
+    <tr>
+      <td>Экологические сертификаты</td>
+      <td>EURO 6</td>
+      <td>EV-сертификация</td>
+      <td>EURO 6</td>
+    </tr>
+    <tr>
+      <td>Гарантийный срок</td>
+      <td>3 года</td>
+      <td><b>5 лет</b></td>
+      <td>3 года</td>
+    </tr>
+    <tr>
+      <td>Максимальная скорость</td>
+      <td><b>~350 км/ч</b></td>
+      <td>~200 км/ч</td>
+      <td>~250 км/ч</td>
+    </tr>
+    <tr>
+      <td>Тип трансмиссии</td>
+      <td>Автоматическая</td>
+      <td>Автоматическая</td>
+      <td>Автоматическая</td>
+    </tr>
+    <tr> 
+      <td>Количество передач</td>
+      <td>7–8</td>
+      <td>1 (EV)</td>
+      <td>6–8</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
